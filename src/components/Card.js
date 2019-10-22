@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
 import "./app.css";
-import Form from "./form" ;
+import Task from "./task";
 
 
 
@@ -12,9 +12,9 @@ const HeaderCard = () => {
           <div className="column is-one-quarter"></div>
           <div className="column is-half" style={{marginTop:"1%"}}>
           <div className="card">
-          <h1 style={{fontSize:"18px", fontWeight:"400"}}>Form Validation using both Formik and Yep</h1>
+          <h1 style={{fontSize:"18px", fontWeight:"400"}}>Task</h1>
           <br/>
-          <Form/>
+           <Task />
            </div>
           </div>
          
