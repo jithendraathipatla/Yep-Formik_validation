@@ -38,6 +38,9 @@ const Forms = () => {
         >
         {({ errors, touched }) => (
           <Form id="form">
+          <h1 style={{textDecoration:"underline"}}>Form Validation using Yep and Formik</h1>
+          <br/>
+          <br/>
             <div className="control">
               <Field  className={errors.firstName && touched.firstName ? "input is-danger" : "input"} name="firstName" type="text" placeholder="your name" />
               {errors.firstName && touched.firstName ? <div style={{color:"red"}}>{errors.firstName}</div> : null}

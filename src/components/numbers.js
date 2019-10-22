@@ -73,6 +73,7 @@ const Numbers = (props) => {
     return (
        
         <div>
+        <h1 style={{textDecoration:"underline"}}>Mobile Keypad clicking:</h1>
         <div className="csskeypad">
           <li className="number" id="11" onClick={value1}>1</li> 
           <li className="number"  id="12" onClick={value2}>2</li> 
@@ -88,8 +89,6 @@ const Numbers = (props) => {
           <li className="number"  id="14" onClick={value12}>*</li>
         </div>
         {state.length <= 6 ? <div> {showing()} </div> : alert("you cannot add more than six")}
-         
-        <button type="button" onClick={sendingTheVAlue} >Add</button>
         </div>
     );
 };

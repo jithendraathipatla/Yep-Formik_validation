@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Numlock from "./numbers";
 
 const Taskask = () => {
-    const [state, setstate] = useState(null);
+    const [state, setstate] = useState();
     const [ random, setrandom ] = useState([]);
     
     const randomgenerator = () => {
@@ -23,10 +23,8 @@ const Taskask = () => {
 
     return (
         <div>
-        <Numlock props={state} />
-        <br/>
-        <br/>
-        <button class="button" onClick={randomgenerator} >Button</button>
+        <h1 style={{textDecoration:"underline"}}>Button to generate the random numbers:</h1>
+        <button class="button is-primary" onClick={randomgenerator}>Button</button>
          { random.length <= 5 ? <div>
         <h1>The random number generator between 1000000 -900000 </h1>
         <ul>

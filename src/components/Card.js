@@ -1,28 +1,30 @@
-import React from 'react';
-import 'bulma/css/bulma.css';
+import React from "react";
+import "bulma/css/bulma.css";
 import "./app.css";
 import Task from "./task";
-
-
+import Form from "../components/form";
+import Numlock from "./numbers";
 
 const HeaderCard = () => {
-    return (
-          <div className="container is-fluid">
-          <div className="columns">
-          <div className="column is-one-quarter"></div>
-          <div className="column is-half" style={{marginTop:"1%"}}>
+  return (
+    <div className="container is-fluid">
+      <div className="columns">
+        <div className="column is-half">
           <div className="card">
-          <h1 style={{fontSize:"18px", fontWeight:"400"}}>Task</h1>
-          <br/>
-           <Task />
-           </div>
+            <Form />
           </div>
-         
+        </div>
+        <div className="column is-half">
+          <div className="card">
+            <Numlock />
           </div>
-          <div className="column is-one-quarter"></div>
-         </div>
-       
-    );
+          <div className="card">
+            <Task />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default HeaderCard;
